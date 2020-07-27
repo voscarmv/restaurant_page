@@ -246,6 +246,42 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./src/components/footer.js":
+/*!**********************************!*\
+  !*** ./src/components/footer.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _newelement_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./newelement.js */ \"./src/components/newelement.js\");\n\n\nvar Footer = function Footer() {\n  var footer = Object(_newelement_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('footer');\n  footer.innerHTML = 'Footer';\n  return footer;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Footer);\n\n//# sourceURL=webpack:///./src/components/footer.js?");
+
+/***/ }),
+
+/***/ "./src/components/navbar.js":
+/*!**********************************!*\
+  !*** ./src/components/navbar.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _newelement_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./newelement.js */ \"./src/components/newelement.js\");\n\n\nvar Navbar = function Navbar() {\n  var navbar = Object(_newelement_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('nav', 'navbar navbar-expand-lg navbar-light bg-light'); // const navbar = document.createElement('nav');\n  // navbar.classList.add(\n  //     'navbar',\n  //     'navbar-expand-lg',\n  //     'navbar-light',\n  //     'bg-light'\n  // );\n\n  navbar.innerHTML = 'Navbar';\n  return navbar;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Navbar);\n/*\n<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n  <a class=\"navbar-brand\" href=\"#\">Navbar</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Features</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Pricing</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link disabled\" href=\"#\">Disabled</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n*/\n\n//# sourceURL=webpack:///./src/components/navbar.js?");
+
+/***/ }),
+
+/***/ "./src/components/newelement.js":
+/*!**************************************!*\
+  !*** ./src/components/newelement.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nfunction _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }\n\nfunction _nonIterableSpread() { throw new TypeError(\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _iterableToArray(iter) { if (typeof Symbol !== \"undefined\" && Symbol.iterator in Object(iter)) return Array.from(iter); }\n\nfunction _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nvar newElement = function newElement() {\n  var tag = null;\n  var classes = null;\n  var element = null;\n\n  if (arguments.length > 0) {\n    tag = arguments.length <= 0 ? undefined : arguments[0];\n  }\n\n  if (arguments.length > 1) {\n    classes = arguments.length <= 1 ? undefined : arguments[1];\n  }\n\n  if (tag != null) {\n    element = document.createElement(tag);\n  }\n\n  if (classes != null) {\n    var _element$classList;\n\n    (_element$classList = element.classList).add.apply(_element$classList, _toConsumableArray(classes.split(\" \")));\n  }\n\n  return element;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (newElement);\n\n//# sourceURL=webpack:///./src/components/newelement.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -254,7 +290,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ \"./src/styles/style.css\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_style_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _pages_home_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/home.js */ \"./src/pages/home.js\");\n\n\n // import Example from './assets/img/example.jpg';\n// import navbar from './components/navbar.js';\n\n\n // function component() {\n//   const element = document.createElement('div');\n//   const btn = document.createElement('button');\n//   // Lodash now imported from this script\n//   element.innerHTML = _.join(['Hello', 'webpack'], ' ');\n//   element.classList.add('hello');\n//   const myImage = new Image();\n//   myImage.src = Example;\n//   element.appendChild(myImage);\n//   btn.innerHTML = 'Click for console message';\n//   btn.classList.add('btn', 'btn-info');\n//   element.appendChild(btn);\n//   element.appendChild(navbar());\n//   return element;\n// }\n\nvar content = function content() {\n  var container = document.createElement('div');\n  container.setAttribute('id', 'content');\n  container.appendChild(Object(_pages_home_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"])());\n  return container;\n};\n\ndocument.body.appendChild(content());\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ \"./src/styles/style.css\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_style_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _pages_layout_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/layout.js */ \"./src/pages/layout.js\");\n/* harmony import */ var _pages_home_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/home.js */ \"./src/pages/home.js\");\n\n\n // import Example from './assets/img/example.jpg';\n// import navbar from './components/navbar.js';\n\n\n\n // function component() {\n//   const element = document.createElement('div');\n//   const btn = document.createElement('button');\n//   // Lodash now imported from this script\n//   element.innerHTML = _.join(['Hello', 'webpack'], ' ');\n//   element.classList.add('hello');\n//   const myImage = new Image();\n//   myImage.src = Example;\n//   element.appendChild(myImage);\n//   btn.innerHTML = 'Click for console message';\n//   btn.classList.add('btn', 'btn-info');\n//   element.appendChild(btn);\n//   element.appendChild(navbar());\n//   return element;\n// }\n\nvar pagecontent = function pagecontent() {\n  var container = document.createElement('div');\n  container.setAttribute('id', 'content');\n  Object(_pages_layout_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(container, _pages_home_js__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\n  return container;\n};\n\ndocument.body.appendChild(pagecontent());\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -266,7 +302,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var loda
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nvar Home = function Home() {\n  var home = document.createElement('main');\n  return home;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./src/pages/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_newelement_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/newelement.js */ \"./src/components/newelement.js\");\n\n\nvar Home = function Home() {\n  var home = Object(_components_newelement_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('div');\n  var header = Object(_components_newelement_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('h1');\n  home.appendChild(header);\n  header.innerHTML = 'Home';\n  return home;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./src/pages/home.js?");
+
+/***/ }),
+
+/***/ "./src/pages/layout.js":
+/*!*****************************!*\
+  !*** ./src/pages/layout.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/navbar.js */ \"./src/components/navbar.js\");\n/* harmony import */ var _components_footer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/footer.js */ \"./src/components/footer.js\");\n\n\n\nvar Layout = function Layout(container, content) {\n  var main = document.createElement('main');\n  main.appendChild(content());\n  container.appendChild(Object(_components_navbar_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n  container.appendChild(main);\n  container.appendChild(Object(_components_footer_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Layout);\n\n//# sourceURL=webpack:///./src/pages/layout.js?");
 
 /***/ }),
 

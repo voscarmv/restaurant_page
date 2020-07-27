@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import Example from './assets/img/example.jpg';
 // import navbar from './components/navbar.js';
 import 'bootstrap';
+import Layout from './pages/layout.js';
 import Home from './pages/home.js';
 
 // function component() {
@@ -28,12 +29,12 @@ import Home from './pages/home.js';
 //   return element;
 // }
 
-const content = () => {
+const pagecontent = () => {
   const container = document.createElement('div');
   container.setAttribute('id', 'content');
-  container.appendChild(Home());
+  Layout(container, Home);
 
   return container;
 };
 
-document.body.appendChild(content());
+document.body.appendChild(pagecontent());

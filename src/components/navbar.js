@@ -1,11 +1,16 @@
+import newElement from './newelement.js'
+
 const Navbar = () => {
-  const navbar = document.createElement('nav');
-  navbar.classList.add(
-      'navbar',
-      'navbar-expand-lg',
-      'navbar-light',
-      'bg-light'
-  );
+  const navbar = newElement('nav', 'navbar navbar-expand-lg navbar-light bg-light');
+  // const navbar = document.createElement('nav');
+  // navbar.classList.add(
+  //     'navbar',
+  //     'navbar-expand-lg',
+  //     'navbar-light',
+  //     'bg-light'
+  // );
+  navbar.innerHTML = 'Navbar';
+
   return navbar;
 };
 
