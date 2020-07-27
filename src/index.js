@@ -1,7 +1,9 @@
 import _ from 'lodash';
-import './style.css';
-import Example from './example.jpg';
+import './styles/style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Example from './assets/img/example.jpg';
 import printMe from './print.js';
+import 'bootstrap';
 
 function component() {
   const element = document.createElement('div');
