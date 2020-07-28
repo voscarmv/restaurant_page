@@ -1,17 +1,12 @@
 import newElement from './newelement.js';
 
 const nestElements = (...args) => {
-  let elements = [];
-  args.forEach(
-    (arg) => {
-      elements.push(newElement(...arg));
-    }
-  );
-  for(let i = 1; i < elements.length; i ++){
-    elements[i-1].appendChild(elements[i]);
+  for(let i = 1; i < args.length; i ++){
+    console.log(args[i]);
+    args[i-1].appendChild(args[i]);
   }
-  if(elements.length > 0){
-    return elements[0];
+  if(args.length > 0){
+    return args[0];
   }
   return null;
 };

@@ -6,6 +6,7 @@ const listElements = (container, ...elements) => {
       container.appendChild(element);
     }
   );
+  return container;
 };
 
 export default listElements;

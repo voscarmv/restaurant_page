@@ -8,7 +8,7 @@ const Navbar = () => {
     navbar,
     newElement('a', 'navbar-brand', 'Navbar', ['href', '#']),
     nestElements(
-      [
+      newElement(
         'button',
         'navbar-toggler',
         null,
@@ -18,11 +18,63 @@ const Navbar = () => {
         ['aria-controls', 'navbarNav'],
         ['aria-expanded', 'false'],
         ['aria-label', 'Toggle navigation']
-      ],
-      [
+      ),
+      newElement(
         'span',
         'navbar-toggler-icon'
-      ]
+      )
+    ),
+    nestElements(
+      newElement(
+        'div',
+        'collapse navbar-collapse',
+        null,
+        ['id', 'navbarNav']
+      ),
+      listElements(
+        newElement(
+          'ul',
+          'navbar-nav'
+        ),
+        nestElements(
+          newElement(
+          'li',
+          'nav-item active'
+            ),
+          newElement(
+            'a',
+            'nav-link',
+            'Home',
+            ['href', '#']
+          )
+        )
+        ,
+        nestElements(
+          newElement(
+          'li',
+          'nav-item'
+            ),
+          newElement(
+            'a',
+            'nav-link',
+            'Menu',
+            ['href', '#']
+          )
+        )
+        ,
+        nestElements(
+          newElement(
+          'li',
+          'nav-item'
+            ),
+          newElement(
+            'a',
+            'nav-link',
+            'Contact',
+            ['href', '#']
+          )
+        )
+      )
     )
   );
 
