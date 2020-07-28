@@ -1,5 +1,5 @@
-import newElement from './newelement.js';
-import nestElements from './nestelements.js';
+import newElement from '../rendering/newelement.js';
+import nestElements from '../rendering/nestelements.js';
 
 const Footer = () => {
   const footer = nestElements(

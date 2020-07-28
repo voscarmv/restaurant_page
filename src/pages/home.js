@@ -1,9 +1,12 @@
-import newElement from '../components/newelement.js';
+import newElement from '../rendering/newelement.js';
+import nestElements from '../rendering/nestelements.js';
+
 const Home = () => {
-  const home = newElement('div');
-  const header = newElement('h1');
-  home.appendChild(header);
-  header.innerHTML = 'Home';
+  const home = nestElements(
+    newElement('div'),
+    newElement('h1', null, 'Home')
+  );
   return home;
 };
+
 export default Home;

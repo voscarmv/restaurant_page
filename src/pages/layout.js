@@ -8,6 +8,7 @@ const Layout = (container, content) => {
   container.appendChild(NavBar());
   container.appendChild(main);
   container.appendChild(Footer());
+  return container;
 };
 
 export default Layout;
