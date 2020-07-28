@@ -1,7 +1,6 @@
 import newElement from '../rendering/newelement.js'
 import nestElements from '../rendering/nestelements.js';
 import listElements from '../rendering/listelements.js';
-import maincontainer from '../components/maincontainer.js';
 import Home from '../pages/home.js';
 import Menu from '../pages/menu.js';
 import Contact from '../pages/contact.js';
