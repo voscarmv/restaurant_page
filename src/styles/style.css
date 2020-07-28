@@ -1,10 +1,10 @@
 @font-face{
   font-family: 'Crafty Girls';
-  src: url('./CraftyGirls-Regular.ttf');
+  src: url('../assets/fonts/CraftyGirls-Regular.ttf');
 }
 
 .hello {
   font-family: 'Crafty Girls', cursive;
   color: red;
-  background: url('./example.jpg');
+  background: url('../assets/img/example.jpg');
 }
