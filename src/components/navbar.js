@@ -5,11 +5,17 @@ import Home from '../pages/home.js';
 import Menu from '../pages/menu.js';
 import Contact from '../pages/contact.js';
 import mainContainer from '../components/maincontainer.js';
+import Logo from '../assets/img/loge.jpg';
+import newImage from '../rendering/newimage.js';
 
 const Navbar = () => {
   const navbar = listElements(
-    newElement('nav', 'navbar navbar-expand-lg navbar-light bg-light'),
-    newElement('a', 'navbar-brand', 'Navbar', null, ['href', '#']),
+    newElement('nav', 'navbar navbar-expand-lg navbar-light bg-white'),
+    listElements(
+      newElement('a', 'navbar-brand', null, () => { mainContainer.display(Home); }, ['href', '#']),
+      newImage(Logo, 'logo-img d-inline-block align-top'),
+      newElement('span', 'logo', 'HotDoge Hotdogs!')
+    ),
     nestElements(
       newElement(
         'button',

@@ -3,8 +3,23 @@
   src: url('../assets/fonts/CraftyGirls-Regular.ttf');
 }
 
+@font-face{
+  font-family: 'Discoteque St';
+  src: url('../assets/fonts/Discoteque-St.ttf');
+}
+
 .hello {
   font-family: 'Crafty Girls', cursive;
   color: red;
-  background: url('../assets/img/example.jpg');
+  background: url('../assets/img/loge.jpg');
+}
+
+.logo {
+  font-family: 'Discoteque St';
+  -webkit-text-stroke: 0.5px orange;
+}
+
+.logo-img {
+  height: 30px;
+  width: auto;
 }

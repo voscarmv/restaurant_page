@@ -68,6 +68,14 @@ Give a ⭐️ if you like this project!
 - Inspiration
 - etc
 
+### Image credits
+
+The images used are not released under the MIT license. These belong to their corresponding owners:
+
+- https://flic.kr/p/329ZqV
+- https://flic.kr/p/eBFdy
+- https://flic.kr/p/27RKtdv
+
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
