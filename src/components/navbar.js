@@ -10,10 +10,10 @@ import newImage from '../rendering/newimage.js';
 
 const Navbar = () => {
   const navbar = listElements(
-    newElement('nav', 'navbar navbar-expand-lg navbar-light bg-white'),
+    newElement('nav', 'navbar navbar-expand-lg navbar-light fixed-top bg-white'),
     listElements(
       newElement('a', 'navbar-brand', null, () => { mainContainer.display(Home); }, ['href', '#']),
-      newImage(Logo, 'logo-img d-inline-block align-top'),
+      newImage(Logo, 'logo-img d-inline-block align-top mr-2'),
       newElement('span', 'logo', 'HotDoge Hotdogs!')
     ),
     nestElements(
