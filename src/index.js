@@ -4,10 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 import Layout from './pages/layout.js';
 import Home from './pages/home.js';
-import newElement from './rendering/newelement.js';
+import pageBody from './components/pagebody.js';
 
 const pagecontent = (() => {
-  const container = Layout(newElement('div', null, null, null, ['id', 'content']), Home);
+  const container = Layout(pageBody.create(), Home);
   return container;
 })();
 
