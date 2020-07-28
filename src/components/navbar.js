@@ -1,15 +1,30 @@
 import newElement from './newelement.js'
+import nestElements from './nestelements.js';
+import listElements from './listelements.js';
 
 const Navbar = () => {
   const navbar = newElement('nav', 'navbar navbar-expand-lg navbar-light bg-light');
-  // const navbar = document.createElement('nav');
-  // navbar.classList.add(
-  //     'navbar',
-  //     'navbar-expand-lg',
-  //     'navbar-light',
-  //     'bg-light'
-  // );
-  navbar.innerHTML = 'Navbar';
+  listElements(
+    navbar,
+    newElement('a', 'navbar-brand', 'Navbar', ['href', '#']),
+    nestElements(
+      [
+        'button',
+        'navbar-toggler',
+        null,
+        ['type', 'button'],
+        ['data-toggle', 'collapse'],
+        ['data-target', '#navbarNav'],
+        ['aria-controls', 'navbarNav'],
+        ['aria-expanded', 'false'],
+        ['aria-label', 'Toggle navigation']
+      ],
+      [
+        'span',
+        'navbar-toggler-icon'
+      ]
+    )
+  );
 
   return navbar;
 };
