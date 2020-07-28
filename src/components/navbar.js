@@ -7,9 +7,8 @@ import Contact from '../pages/contact.js';
 import mainContainer from '../components/maincontainer.js';
 
 const Navbar = () => {
-  const navbar = newElement('nav', 'navbar navbar-expand-lg navbar-light bg-light');
-  listElements(
-    navbar,
+  const navbar = listElements(
+    newElement('nav', 'navbar navbar-expand-lg navbar-light bg-light'),
     newElement('a', 'navbar-brand', 'Navbar', null, ['href', '#']),
     nestElements(
       newElement(
