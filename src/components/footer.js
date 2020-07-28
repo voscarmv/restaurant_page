@@ -1,8 +1,9 @@
-import newElement from './newelement.js';
+// import newElement from './newelement.js';
+import nestElements from './nestelements.js';
 
 const Footer = () => {
-  const footer = newElement('footer');
-  footer.innerHTML = 'Footer';
+  const footer = nestElements(['footer'], ['div', null, 'Footer']);
+  // footer.innerHTML = 'Footer';
   return footer;
 };
 
