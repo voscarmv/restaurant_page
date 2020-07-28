@@ -2,6 +2,7 @@ const newElement = (...args) => {
   let tag = null;
   let classes = null;
   let html = null;
+  let click = null;
   let attribs = null;
   let element = null;
   if(args.length > 0){
@@ -14,7 +15,10 @@ const newElement = (...args) => {
     html = args[2];
   }
   if(args.length > 3){
-    attribs = args.slice(3);
+    click = args[3];
+  }
+  if(args.length > 4){
+    attribs = args.slice(4);
   }
   if(tag != null){
     element = document.createElement(tag);
@@ -24,6 +28,9 @@ const newElement = (...args) => {
   }
   if(html != null){
     element.innerHTML = html;
+  }
+  if(click != null){
+    element.addEventListener('click', () => {click();});
   }
   if(attribs != null){
     attribs.forEach(

@@ -2,16 +2,20 @@ import newElement from './newelement.js'
 import nestElements from './nestelements.js';
 import listElements from './listelements.js';
 
+const message = () => {
+  console.log('home');
+};
+
 const Navbar = () => {
   const navbar = newElement('nav', 'navbar navbar-expand-lg navbar-light bg-light');
   listElements(
     navbar,
-    newElement('a', 'navbar-brand', 'Navbar', ['href', '#']),
+    newElement('a', 'navbar-brand', 'Navbar', null, ['href', '#']),
     nestElements(
       newElement(
         'button',
         'navbar-toggler',
-        null,
+        null, null,
         ['type', 'button'],
         ['data-toggle', 'collapse'],
         ['data-target', '#navbarNav'],
@@ -19,60 +23,23 @@ const Navbar = () => {
         ['aria-expanded', 'false'],
         ['aria-label', 'Toggle navigation']
       ),
-      newElement(
-        'span',
-        'navbar-toggler-icon'
-      )
+      newElement('span', 'navbar-toggler-icon')
     ),
     nestElements(
-      newElement(
-        'div',
-        'collapse navbar-collapse',
-        null,
-        ['id', 'navbarNav']
-      ),
+      newElement('div', 'collapse navbar-collapse', null, null, ['id', 'navbarNav']),
       listElements(
-        newElement(
-          'ul',
-          'navbar-nav'
+        newElement('ul', 'navbar-nav'),
+        nestElements(
+          newElement('li', 'nav-item active'),
+          newElement('a', 'nav-link', 'Home', () => { console.log('HOme'); }, ['href', '#'])
         ),
         nestElements(
-          newElement(
-          'li',
-          'nav-item active'
-            ),
-          newElement(
-            'a',
-            'nav-link',
-            'Home',
-            ['href', '#']
-          )
-        )
-        ,
+          newElement('li', 'nav-item'),
+          newElement('a', 'nav-link', 'Menu', null, ['href', '#'])
+        ),
         nestElements(
-          newElement(
-          'li',
-          'nav-item'
-            ),
-          newElement(
-            'a',
-            'nav-link',
-            'Menu',
-            ['href', '#']
-          )
-        )
-        ,
-        nestElements(
-          newElement(
-          'li',
-          'nav-item'
-            ),
-          newElement(
-            'a',
-            'nav-link',
-            'Contact',
-            ['href', '#']
-          )
+          newElement('li', 'nav-item'),
+          newElement('a', 'nav-link', 'Contact', null, ['href', '#'])
         )
       )
     )
