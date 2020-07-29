@@ -8,7 +8,7 @@
   src: url('../assets/fonts/Discoteque-St.ttf');
 }
 
-.home-title, .menu-name {
+.home-title, .menu-name, .contact-title {
   font-family: 'Crafty Girls', cursive;
   font-weight: 800;
   color: orange;
@@ -54,7 +54,7 @@ body {
 }
 
 .page {
-  padding: 60px;
+  padding: 120px;
 }
 
 .longboy {
@@ -76,10 +76,14 @@ body {
 }
 
 .hotdog-image {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 .menu-text {
-  width: 300px;
+  width: 200px;
+}
+
+.contact {
+  max-width: 700px;
 }
