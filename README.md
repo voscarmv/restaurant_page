@@ -29,7 +29,6 @@ Give a ⭐️ if you like this project!
 
 - Thanks to [Microverse](www.microverse.org) for the opportunity.
 - Thanks to [The Odin Project](https://www.theodinproject.com/) for the guidance.
-- Thanks to Michael Hartl for his [tutorial](https://www.railstutorial.org/).
 
 ### Image credits
 
