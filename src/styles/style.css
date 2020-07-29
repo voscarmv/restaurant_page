@@ -1,26 +1,28 @@
-@font-face{
+@font-face {
   font-family: 'Crafty Girls';
   src: url('../assets/fonts/CraftyGirls-Regular.ttf');
 }
 
-@font-face{
+@font-face {
   font-family: 'Discoteque St';
   src: url('../assets/fonts/Discoteque-St.ttf');
 }
 
-.home-title, .menu-name, .contact-title {
+.home-title,
+.menu-name,
+.contact-title {
   font-family: 'Crafty Girls', cursive;
   font-weight: 800;
   color: orange;
 }
 
 .logo {
-  font-family: 'Discoteque St';
+  font-family: 'Discoteque St', sans-serif;
   -webkit-text-stroke: 0.5px orange;
 }
 
 .inline-logo {
-  font-family: 'Discoteque St';
+  font-family: 'Discoteque St', sans-serif;
   -webkit-text-stroke: 0.3px orange;
   font-size: 12px;
 }
