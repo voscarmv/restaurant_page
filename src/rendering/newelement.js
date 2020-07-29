@@ -5,42 +5,48 @@ const newElement = (...args) => {
   let click = null;
   let attribs = null;
   let element = null;
-  if(args.length > 0){
-    tag = args[0];
+  const argsarray = args;
+  const zero = 0;
+  const one = 1;
+  const two = 2;
+  const three = 3;
+  const four = 4;
+  if (argsarray.length > 0) {
+    tag = argsarray[zero];
   }
-  if(args.length > 1){
-    classes = args[1];
+  if (argsarray.length > 1) {
+    classes = argsarray[one];
   }
-  if(args.length > 2){
-    html = args[2];
+  if (argsarray.length > 2) {
+    html = argsarray[two];
   }
-  if(args.length > 3){
-    click = args[3];
+  if (argsarray.length > 3) {
+    click = argsarray[three];
   }
-  if(args.length > 4){
-    attribs = args.slice(4);
+  if (argsarray.length > 4) {
+    attribs = argsarray.slice(four);
   }
-  if(tag != null){
+  if (tag != null) {
     element = document.createElement(tag);
   }
-  if(classes != null){
-    element.classList.add(...classes.split(" "));
+  if (classes != null) {
+    element.classList.add(...classes.split(' '));
   }
-  if(html != null){
+  if (html != null) {
     element.innerHTML = html;
   }
-  if(click != null){
-    element.addEventListener('click', () => {click();});
+  if (click != null) {
+    element.addEventListener('click', () => { click(); });
   }
-  if(attribs != null){
+  if (attribs != null) {
     attribs.forEach(
       (attrib) => {
-        if(Array.isArray(attrib)){
-          if(attrib.length > 1){
+        if (Array.isArray(attrib)) {
+          if (attrib.length > 1) {
             element.setAttribute(attrib[0], attrib[1]);
           }
         }
-      }
+      },
     );
   }
   return element;

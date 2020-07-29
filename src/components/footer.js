@@ -1,10 +1,10 @@
-import newElement from '../rendering/newelement.js';
-import nestElements from '../rendering/nestelements.js';
+import newElement from '../rendering/newelement';
+import nestElements from '../rendering/nestelements';
 
 const Footer = () => {
   const footer = nestElements(
     newElement('footer', 'footer bg-white'),
-    newElement('div', 'container', 'Copyleft &copy; 2020 Doge Industries. No rights reserved.')
+    newElement('div', 'container', 'Copyleft &copy; 2020 Doge Industries. No rights reserved.'),
   );
   return footer;
 };

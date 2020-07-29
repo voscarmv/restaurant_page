@@ -1,6 +1,6 @@
-import NavBar from '../components/navbar.js';
-import Footer from '../components/footer.js';
-import mainContainer from '../components/maincontainer.js';
+import NavBar from '../components/navbar';
+import Footer from '../components/footer';
+import mainContainer from '../components/maincontainer';
 
 const Layout = (container, content) => {
   const main = mainContainer.create();

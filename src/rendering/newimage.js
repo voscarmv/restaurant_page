@@ -2,18 +2,20 @@ const newImage = (...args) => {
   let image = null;
   let classes = null;
   let element = null;
-  if(args.length > 0){
-    image = args[0];
+  const zero = 0;
+  const one = 1;
+  if (args.length > 0) {
+    image = args[zero];
   }
-  if(args.length > 1){
-    classes = args[1];
+  if (args.length > 1) {
+    classes = args[one];
   }
-  if(image != null){
+  if (image != null) {
     element = new Image();
-    element.src = image;  
+    element.src = image;
   }
-  if(classes != null){
-    element.classList.add(...classes.split(" "));
+  if (classes != null) {
+    element.classList.add(...classes.split(' '));
   }
   return element;
 };

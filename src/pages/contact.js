@@ -1,5 +1,5 @@
-import newElement from '../rendering/newelement.js';
-import listElements from '../rendering/listelements.js';
+import newElement from '../rendering/newelement';
+import listElements from '../rendering/listelements';
 
 const Contact = (() => {
   const contact = listElements(
@@ -11,15 +11,15 @@ const Contact = (() => {
       listElements(
         newElement('div', 'form-group'),
         newElement('label', null, 'E-mail:', null, ['for', 'email']),
-        newElement('input', 'form-control', null, null, ['id', 'email'], ['placeholder', 'Enter your e-mail here'])
+        newElement('input', 'form-control', null, null, ['id', 'email'], ['placeholder', 'Enter your e-mail here']),
       ),
       listElements(
         newElement('div', 'form-group'),
         newElement('label', null, 'Message:', null, ['for', 'message']),
-        newElement('textarea', 'form-control', null, null, ['id', 'message'], ['placeholder', 'Your message here'], ['rows', '5'])
+        newElement('textarea', 'form-control', null, null, ['id', 'message'], ['placeholder', 'Your message here'], ['rows', '5']),
       ),
-      newElement('button', 'btn btn-warning', 'Send')
-    )
+      newElement('button', 'btn btn-warning', 'Send'),
+    ),
   );
   return contact;
 })();

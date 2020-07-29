@@ -1,4 +1,4 @@
-import newElement from '../rendering/newelement.js';
+import newElement from '../rendering/newelement';
 
 const mainContainer = (() => {
   const name = 'main-display';
@@ -7,7 +7,7 @@ const mainContainer = (() => {
     document.getElementById(name).innerHTML = '';
     document.getElementById(name).appendChild(page);
   };
-  return {create, display}
+  return { create, display };
 })();
 
 export default mainContainer;

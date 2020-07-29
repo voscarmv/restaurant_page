@@ -1,5 +1,5 @@
 const path = require('path');
-const htmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
@@ -8,9 +8,9 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new htmlWebpackPlugin({
+    new HtmlWebpackPlugin({
       title: 'HotDoge Hotdogs!',
-    }),    
+    }),
   ],
   output: {
     filename: '[name].bundle.js',
@@ -36,7 +36,7 @@ module.exports = {
         ],
       },
       {
-        test:  /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|gif)$/,
         use: [
           'file-loader',
         ],
