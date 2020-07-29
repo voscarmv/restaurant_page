@@ -1,6 +1,6 @@
 # HotDoge Hotdogs! (restaurant page)
 
- Solution to the *Restaurant page* excercise from The Odin Project's [section on webpack](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
+ Solution to the *Restaurant page* excercise from The Odin Project's [section on webpack](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page).
 
 ![image](https://user-images.githubusercontent.com/2739245/88752730-41b8a500-d120-11ea-9c67-ecd3757b9feb.png)
 
