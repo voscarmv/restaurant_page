@@ -8,7 +8,7 @@
   src: url('../assets/fonts/Discoteque-St.ttf');
 }
 
-.home-title {
+.home-title, .menu-name {
   font-family: 'Crafty Girls', cursive;
   font-weight: 800;
   color: orange;
@@ -17,6 +17,12 @@
 .logo {
   font-family: 'Discoteque St';
   -webkit-text-stroke: 0.5px orange;
+}
+
+.inline-logo {
+  font-family: 'Discoteque St';
+  -webkit-text-stroke: 0.3px orange;
+  font-size: 12px;
 }
 
 .logo-img {
@@ -44,10 +50,36 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
 
 .page {
   padding: 60px;
+}
+
+.longboy {
+  background-image: url('../assets/img/longboy.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.imbaby {
+  background-image: url('../assets/img/imbaby.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.flatdog {
+  background-image: url('../assets/img/flatdoge.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.hotdog-image {
+  width: 300px;
+  height: 300px;
+}
+
+.menu-text {
+  width: 300px;
 }

@@ -29,12 +29,12 @@ const Home = (() => {
         newElement(
           'p',
           'home-text',
-          'Check out our menu to order online.'
+          'Check out our menu to order online!'
         ),
         newElement(
           'p',
           'home-text',
-          'Disclaimer: our hotdoges are 100% vegan. No doge has been hurt in the making of our hotdogs.'
+          'Disclaimer: Our hotdoges are 100% vegan. No doge has been harmed in the making of our hotdogs.'
         ),
       ),
       nestElements(
@@ -47,10 +47,3 @@ const Home = (() => {
 })();
 
 export default Home;
-
-/*
-<div class="container">
-  <div class="row">
-  </div>
-</div>
-*/
