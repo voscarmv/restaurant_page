@@ -1,56 +1,19 @@
-# Project Name
+# HotDoge Hotdogs! (restaurant page)
 
-> One paragraph statement about the project.
+ Solution to the *Restaurant page* excercise from The Odin Project's [section on webpack](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
 
-![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
-
-## Built With
-
-- Major languages,
-- frameworks,
-- technologies used
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+Check out the live demo [here](https://lit-earth-21239.herokuapp.com/users/new).
 
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
+## Author
 
 **Oscar Mier**
 - Github: [@voscarmv](https://github.com/voscarmv)
 - Twitter: [@voscarmv](https://twitter.com/voscarmv)
 - Linkedin: [Oscar Mier](https://www.linkedin.com/in/oscar-mier-072984196/) 
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -64,9 +27,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks to [Microverse](www.microverse.org) for the opportunity.
+- Thanks to [The Odin Project](https://www.theodinproject.com/) for the guidance.
+- Thanks to Michael Hartl for his [tutorial](https://www.railstutorial.org/).
 
 ### Image credits
 
