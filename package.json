@@ -37,6 +37,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "lodash": "^4.17.19"
+    "lodash": "^4.17.19",
+    "bootstrap": "^4.5.0"
   }
 }
