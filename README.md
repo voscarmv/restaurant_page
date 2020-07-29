@@ -8,6 +8,18 @@
 
 Check out the live demo [here](https://rawcdn.githack.com/voscarmv/restaurant_page/14cb58a38298daf46b7e29b0fa8ec58882fc20a3/dist/index.html#).
 
+### Prerequisites
+- Install Node JS. ([NodeJS Documentation](https://nodejs.org/en/docs/)) 
+- Install Webpack. ([Webpack Documentation](https://webpack.js.org/guides/installation/)) 
+
+### Install
+- Clone this repository in your terminal using **git clone** command.
+- Run **npm run build** in your terminal.
+
+### Usage
+- Run **npm run server** in your terminal.
+- Open **http://localhost:8080** in your browser.
+
 ## Author
 
 **Oscar Mier**
