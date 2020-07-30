@@ -14,6 +14,7 @@ Check out the live demo [here](https://rawcdn.githack.com/voscarmv/restaurant_pa
 
 ### Install
 - Clone this repository in your terminal using **git clone** command.
+- Enter the repo directory.
 - Run `npm install && npm run build` in your terminal.
 
 ### Usage
