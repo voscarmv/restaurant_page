@@ -28,6 +28,10 @@ Check out the live demo [here](https://rawcdn.githack.com/voscarmv/restaurant_pa
 - Twitter: [@voscarmv](https://twitter.com/voscarmv)
 - Linkedin: [Oscar Mier](https://www.linkedin.com/in/oscar-mier-072984196/) 
 
+## Future features and improvements
+
+- Find and install `npm` animation packages for a better UX.
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
